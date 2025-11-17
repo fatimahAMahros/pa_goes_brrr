@@ -1,0 +1,9 @@
+# Environment variables file for local secrets
+.env
+
+# Other common ignore entries might look like this:
+# Python dependencies/build files
+__pycache__/
+*.pyc
+venv/
+.pytest_cache/
