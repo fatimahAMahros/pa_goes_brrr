@@ -1,7 +1,7 @@
 # Scraping Comment
 So far, [test_instagram.py](./test_instagram.py) can only scrape comments based off of post urls. The post urls  themselves were gotten from Apify's post scraper when I was trying their free plan.
 
-The comment scraper itself is based on this [IG Exporter & Scraper chrome extension](https://chromewebstore.google.com/detail/nmgmcehdhckaehgfokcomaboclhbdpkb?utm_source=item-share-cb) but automated to handle batch urls.
+The comment scraper itself is based on this [IG Exporter & Scraper chrome extension](https://chromewebstore.google.com/detail/nmgmcehdhckaehgfokcomaboclhbdpkb) but automated to handle batch urls.
 
 ### Cookies
 To run it, make sure you have an active session of instagram login to utilize the cookies for this scraping. The cookies necessary for this to work are listed in the .env.example.
