@@ -1,0 +1,197 @@
+def simple_but_comparative(tfidf_matrix, feature_names, labels, k, top_n=10):
+    cluster_keywords = {}
+    
+    # Hitung rata-rata global
+    global_mean = tfidf_matrix.mean(axis=0)
+    if hasattr(global_mean, 'A1'):
+        global_mean = global_mean.A1
+    
+    for cluster_id in range(1, k + 1):
+        indices = np.where(labels == cluster_id)[0]
+        
+        if len(indices) == 0:
+            cluster_keywords[cluster_id] = []
+            continue
+        
+        cluster_data = tfidf_matrix[indices]
+        
+        if hasattr(cluster_data, 'toarray'):
+            cluster_data = cluster_data.toarray()
+        
+        # Rata-rata dalam cluster
+        cluster_mean = cluster_data.mean(axis=0)
+        
+        # SELISIH dengan global (ini kunci perbandingan!)
+        difference = cluster_mean - global_mean
+        
+        # Ambil term dengan selisih terbesar
+        top_indices = np.argsort(-difference)[:top_n]
+        
+        keywords = []
+        for idx in top_indices:
+            if difference[idx] > 0:  # Hanya yang lebih tinggi dari global
+                keywords.append({
+                    'term': feature_names[idx],
+                    'cluster_mean': cluster_mean[idx],
+                    'global_mean': global_mean[idx],
+                    'difference': difference[idx],
+                    'ratio': cluster_mean[idx] / (global_mean[idx] + 1e-10)
+                })
+        
+        cluster_keywords[cluster_id] = keywords
+    
+    return cluster_keywords
+
+comparative_keywords = simple_but_comparative(
+    tfidf_matrix=vectors_dense,
+    feature_names=feature_names,
+    labels=labels_opt,
+    k=k_optimal,
+    top_n=5
+)
+
+def display_comparative_results(comparative_keywords, max_clusters=10):
+    """
+    Tampilkan hasil ekstraksi dengan format yang mudah dibaca
+    """
+    print("\n📊 HASIL EKSTRAKSI KATA KUNCI PER CLUSTER")
+    print("=" * 70)
+    
+    for cluster_id in sorted(comparative_keywords.keys()):
+        if cluster_id > max_clusters:  # Batasi yang ditampilkan
+            continue
+            
+        keywords = comparative_keywords[cluster_id]
+        
+        if not keywords:
+            print(f"\n📌 Cluster {cluster_id}: Tidak ada kata kunci signifikan")
+            continue
+        
+        print(f"\n📌 Cluster {cluster_id} ({len(keywords)} kata kunci):")
+        print("-" * 70)
+        print(f"{'No.':<4} {'Kata Kunci':<20} {'TF-IDF Cluster':<15} {'TF-IDF Global':<15} {'Selisih':<12} {'Rasio':<10}")
+        print("-" * 70)
+        
+        for i, kw in enumerate(keywords, 1):
+            print(f"{i:<4} {kw['term']:<20} "
+                  f"{kw['cluster_mean']:<15.4f} "
+                  f"{kw['global_mean']:<15.4f} "
+                  f"+{kw['difference']:<11.4f} "
+                  f"{kw['ratio']:<9.1f}x")
+    
+    # Tampilkan total stats
+    total_keywords = sum(len(kws) for kws in comparative_keywords.values())
+    clusters_with_keywords = sum(1 for kws in comparative_keywords.values() if kws)
+    
+    print(f"\n📈 STATISTIK:")
+    print(f"• Total cluster: {len(comparative_keywords)}")
+    print(f"• Cluster dengan kata kunci: {clusters_with_keywords}")
+    print(f"• Total kata kunci: {total_keywords}")
+    print(f"• Rata-rata per cluster: {total_keywords/len(comparative_keywords):.1f}")
+
+# Tampilkan hasil
+display_comparative_results(comparative_keywords, max_clusters= k_optimal)#min(10, k_optimal))
+
+def filter_impactful_clusters(comparative_keywords, 
+                             min_difference=0.1, 
+                             min_ratio=10.0,
+                             min_keywords=3):
+    """
+    Filter cluster yang benar-benar berdampak berdasarkan:
+    1. Selisih TF-IDF yang signifikan
+    2. Rasio yang tinggi (benar-benar unik)
+    3. Jumlah keyword yang cukup
+    """
+    
+    impactful_clusters = {}
+    cluster_scores = {}
+    
+    for cluster_id, keywords in comparative_keywords.items():
+        if not keywords:
+            continue
+        
+        # Hitung rata-rata metrics untuk cluster
+        avg_difference = np.mean([kw['difference'] for kw in keywords])
+        avg_ratio = np.mean([kw['ratio'] for kw in keywords])
+        n_keywords = len(keywords)
+        
+        # Score = gabungan metrics
+        score = (avg_difference * 0.4 + 
+                np.log(avg_ratio + 1) * 0.3 + 
+                min(n_keywords/10, 1) * 0.3)
+        
+        # Filter criteria
+        if (avg_difference >= min_difference and
+            avg_ratio >= min_ratio and
+            n_keywords >= min_keywords):
+            
+            impactful_clusters[cluster_id] = {
+                'keywords': keywords,
+                'avg_difference': avg_difference,
+                'avg_ratio': avg_ratio,
+                'n_keywords': n_keywords,
+                'score': score
+            }
+        
+        cluster_scores[cluster_id] = score
+    
+    return impactful_clusters, cluster_scores
+
+# Atau versi lebih sederhana:
+def simple_filter_clusters(comparative_keywords, 
+                          min_difference=0.3, 
+                          min_keywords=3):
+    """
+    Filter sederhana berdasarkan selisih dan jumlah keyword
+    """
+    impactful = {}
+    
+    for cluster_id, keywords in comparative_keywords.items():
+        if not keywords or len(keywords) < min_keywords:
+            continue
+        
+        # Cek apakah ada keyword dengan selisih signifikan
+        max_diff = max(kw['difference'] for kw in keywords)
+        if max_diff >= min_difference:
+            impactful[cluster_id] = keywords
+    
+    return impactful
+
+def display_impactful_clusters(impactful_clusters, top_n=20):
+    """
+    Tampilkan hanya cluster yang impactful
+    """
+    print("\n🔥 CLUSTER BERDAMPAK TINGGI")
+    print("=" * 70)
+    
+    if not impactful_clusters:
+        print("Tidak ada cluster yang memenuhi kriteria dampak tinggi")
+        return
+    
+    # Urutkan berdasarkan dampak (selisih terbesar)
+    sorted_clusters = sorted(
+        impactful_clusters.items(),
+        key=lambda x: max(kw['difference'] for kw in x[1]),
+        reverse=True
+    )
+    
+    for cluster_id, keywords in sorted_clusters[:top_n]:
+        max_diff = max(kw['difference'] for kw in keywords)
+        avg_ratio = np.mean([kw['ratio'] for kw in keywords])
+        
+        print(f"\n📌 Cluster {cluster_id} (Selisih maks: {max_diff:.3f}, Rasio rata²: {avg_ratio:.1f}x)")
+        print("-" * 70)
+        
+        for i, kw in enumerate(keywords[:8], 1):  # Tampilkan max 8 keyword
+            print(f"{i:2d}. {kw['term']:20s} "
+                  f"| Selisih: +{kw['difference']:.3f} "
+                  f"| Rasio: {kw['ratio']:.1f}x")
+    
+    print(f"\n📊 Total cluster berdampak: {len(impactful_clusters)}")
+
+# Gunakan dengan hasil Anda
+impactful = simple_filter_clusters(comparative_keywords, 
+                                  min_difference=0.6,  # Selisih minimal 0.5
+                                  min_keywords=2)      # Minimal 2 keyword
+
+display_impactful_clusters(impactful)
