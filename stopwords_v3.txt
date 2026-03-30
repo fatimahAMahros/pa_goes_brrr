@@ -430,6 +430,7 @@ terlebih
 seperti
 setidak-tidaknya
 sama
+sama sekali
 semata-mata
 berarti
 dalam
@@ -814,6 +815,7 @@ ae
 aee
 ahh
 aj
+aja
 ajaa
 ajaaaa
 ajaaini
@@ -824,6 +826,7 @@ akhirakhir
 alhamdlullah
 alhamdulilah
 all
+allah
 amiiiiinn
 amiin
 an
@@ -860,6 +863,7 @@ barutapi
 bbrp
 bbrpa
 beeberapa
+begini
 belet
 benarrrr
 bener
@@ -936,9 +940,11 @@ gakkkkkkkkkkkkk
 gaoleh
 gda
 gdaa
+gitu
 giiituuuuu
 gimna
 gimana
+gini
 ginian
 gk
 gmana
@@ -960,6 +966,7 @@ hallo
 haloo
 halooo
 halooooooo
+hari
 heh
 hehehehe
 hehehhe
@@ -984,8 +991,10 @@ isok
 it
 itupun
 iya <num>
+iya
 iyaa
 iyo
+jam
 jd
 jg
 jga
@@ -993,12 +1002,15 @@ jelas <num>
 jelasss
 jgn
 jikapun
+kak
 kaka
+kalo
 kalopun
 kapaaan
 karep
 karepe
 karna
+kasih
 ke <num>
 kene
 kesana
@@ -1013,6 +1025,7 @@ kon
 koq
 kpn
 kq
+krn
 krna
 kunu
 kyak
@@ -1023,6 +1036,7 @@ lahh
 lakok
 lbih
 lealaaa
+lek
 lha
 lho
 llo
@@ -1067,6 +1081,7 @@ ndue
 nduwe
 nduwur
 ne
+nek
 ng
 ngak
 ngapa
@@ -1103,6 +1118,7 @@ onk
 ono
 onok
 onoooook
+opo
 opoo
 ora
 owalah
@@ -1114,6 +1130,7 @@ pakkk
 pancet
 pancettt
 pantesan
+pas
 pdahal
 pdhal
 pdhl
@@ -1138,6 +1155,7 @@ sama <num>
 samapi
 sampaikan
 sampe
+sampek
 sampekk
 samsek
 sangaaatt
@@ -1154,6 +1172,7 @@ sebenernya
 segini
 segitu
 sej
+sek
 sekai <num>
 sekalii
 sekalinnya
@@ -1163,6 +1182,7 @@ sekitarnya
 sekrang
 sekrng
 selaluu
+selesai
 setalah
 sg
 shg
@@ -1173,6 +1193,7 @@ sisan
 skali
 skg
 skr
+skrang
 skrg
 skrng
 slalu
@@ -1190,6 +1211,7 @@ stgh
 sudh
 sy
 sya
+ta
 taalaaaahh
 taaku
 tba <num>
@@ -1206,6 +1228,7 @@ that
 the
 this
 tidack
+tolong
 tpi
 trnyata
 trs
@@ -1245,6 +1268,7 @@ woww
 woy
 woyyyytak
 ws
+ya
 yaa
 yaaaaduuuh
 yaaallaaaaah
