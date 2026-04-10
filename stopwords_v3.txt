@@ -830,6 +830,7 @@ allah
 amiiiiinn
 amiin
 an
+allah
 allaaaah
 ancen
 ancene
@@ -873,6 +874,7 @@ berpa
 bgt
 bgttt
 bgitu
+biar
 bisaa
 bisanya
 biasany
@@ -963,6 +965,7 @@ haduuhh
 hahahaha
 halah
 hallo
+halo
 haloo
 halooo
 halooooooo
@@ -1002,6 +1005,7 @@ jelas <num>
 jelasss
 jgn
 jikapun
+kah
 kak
 kaka
 kalo
@@ -1012,6 +1016,8 @@ karepe
 karna
 kasih
 ke <num>
+kemarin
+kena
 kene
 kesana
 kesanaa
@@ -1040,11 +1046,14 @@ lek
 lha
 lho
 llo
+loh
 lohh
 lohhh
 loooo
 lossssss
+maaf
 makane
+makasih
 maringene
 masihh
 masigit
@@ -1066,6 +1075,7 @@ mna
 mrene
 msih
 msh
+moga
 moso
 mosok
 msok
@@ -1098,6 +1108,7 @@ nggarakno
 ngunu
 ngunui
 nie
+nih
 nihhh
 njih
 nng
@@ -1148,6 +1159,7 @@ rekrek
 saiiki
 saiki
 sajagak
+sak
 sakben
 sakdurunge
 sakjane
@@ -1182,11 +1194,13 @@ sekitarnya
 sekrang
 sekrng
 selaluu
+selamat
 selesai
 setalah
 sg
 shg
 sido
+sih
 sihh
 sik
 sisan
@@ -1218,6 +1232,7 @@ tba <num>
 td
 tdi
 tdk
+terima
 teros
 teross
 teruss
