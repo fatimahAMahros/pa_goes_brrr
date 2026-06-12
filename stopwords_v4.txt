@@ -1,5 +1,20 @@
 a
 air
+pagi
+siang
+sore
+malam
+cuci
+mandi
+bab
+alfamart
+alhamdulillah
+astaga
+hair
+dryer
+gara
+gara-gara
+daerah
 b
 c
 d
@@ -179,6 +194,8 @@ padahal
 tambahnya
 memperlihatkan
 sekarang
+besok
+kemarin
 masing-masing
 kamilah
 diibaratkan
@@ -253,7 +270,6 @@ berlainan
 belum
 menanti-nanti
 bersama
-dimungkinkan
 dilalui
 sendirian
 diingat
@@ -262,7 +278,6 @@ nah
 nantinya
 saat
 kalaupun
-memungkinkan
 kalaulah
 tadi
 kala
@@ -345,7 +360,6 @@ ucap
 melakukan
 mengatakan
 sana
-kemungkinannya
 pun
 enggak
 disebut
@@ -614,7 +628,6 @@ melainkan
 menyiapkan
 merupakan
 sepanjang
-mungkinkah
 para
 entahlah
 kurang
@@ -756,7 +769,6 @@ bekerja
 memastikan
 kini
 ujar
-kemungkinan
 olehnya
 pentingnya
 persoalan
@@ -768,7 +780,6 @@ agak
 antaranya
 bermacam-macam
 sebaliknya
-mungkin
 sesudahnya
 sebuah
 sedang
@@ -1059,6 +1070,7 @@ kyk
 kykny
 l <num>
 lahh
+lak
 lakok
 lbih
 lealaaa
