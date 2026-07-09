@@ -5,7 +5,6 @@ siang
 sore
 malam
 cuci
-mandi
 bab
 alfamart
 alhamdulillah
@@ -380,7 +379,6 @@ sebutlah
 pak
 sejenak
 ia
-kecil
 yaitu
 inginkah
 nanti
@@ -489,7 +487,6 @@ khususnya
 antar
 disampaikan
 memihak
-sekecil
 walaupun
 kapanpun
 terasa

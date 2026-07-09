@@ -1,0 +1,128 @@
+{
+  "total_komentar": 1128,
+  "total_klaster": 985,
+  "klaster_dirangkum": 20,
+  "ringkasan_global": "Masyarakat berbahasa Indonesia mengungkapkan kekecewaan dan kekhawatiran atas kondisi air yang tidak memadai dan tidak stabil, serta gangguan pasokan air yang sering terjadi di berbagai wilayah. Sentimen umum yang paling sering disinggung adalah kekecewaan, kekhawatiran, dan kehilangan harapan terhadap kondisi air yang tidak memuaskan. Topik-topik utama yang paling sering disinggung adalah kekurangan air, gangguan pasokan air, dan kualitas air yang tidak baik, serta kekhawatiran akan dampak kekeringan pada lingkungan dan kehidupan masyarakat.",
+  "klaster_utama": [
+    {
+      "cluster_id": "misc",
+      "jumlah_komentar": 40,
+      "tema": "Krisis Air PDAM",
+      "ringkasan": "Masyarakat di beberapa daerah mengeluhkan kekurangan air bersih dan gangguan pasokan air, serta menuntut solusi yang efektif dan cepat untuk mengatasi masalah ini. Mereka juga mengungkapkan kekecewaan dan kekhawatiran atas kematian PDAM Kebraon dan kekurangan informasi yang akurat tentang kondisi air."
+    },
+    {
+      "cluster_id": "202",
+      "jumlah_komentar": 24,
+      "tema": "Ketersediaan Air Bersih",
+      "ringkasan": "Masyarakat mengeluhkan berbagai masalah yang mereka hadapi, seperti kekurangan penerangan, keterlambatan sinyal internet atau listrik, kekurangan air, dan kebocoran listrik. Mereka juga mengungkapkan kekecewaan dan kekhawatiran terhadap kinerja PDAM Surya Sembada dan pemerintah dalam menyelesaikan masalah infrastruktur dan penyediaan air yang tidak memadai."
+    },
+    {
+      "cluster_id": "638",
+      "jumlah_komentar": 24,
+      "tema": "Kerusakan Air PDAM",
+      "ringkasan": "Masyarakat mengungkapkan kekecewaan dan kekhawatiran atas ketersediaan air bersih yang semakin langka dan tidak terjamin, serta gangguan layanan air yang sering terjadi di berbagai wilayah. Komentar-komentar tersebut menunjukkan perasaan sedih, kehilangan, kekecewaan, dan kekhawatiran yang mendalam terhadap situasi yang tidak adil, tidak masuk akal, dan tidak berubah."
+    },
+    {
+      "cluster_id": "424",
+      "jumlah_komentar": 18,
+      "tema": "Kebraon Air Mati",
+      "ringkasan": "Ringkasan akhir: Masyarakat mengungkapkan kekecewaan dan kekhawatiran atas kondisi air di Kebraon yang telah mengalami penurunan kualitas atau kekurangan, serta kejadian yang tidak terduga dan tidak masuk akal. Komentar-komentar tersebut menunjukkan kekecewaan, kekhawatiran, dan kemarahan masyarakat terhadap kondisi air yang tidak bergerak atau mati."
+    },
+    {
+      "cluster_id": "836",
+      "jumlah_komentar": 9,
+      "tema": "Kurangnya Air Bersih",
+      "ringkasan": "Masyarakat mengungkapkan kekecewaan dan kebingungan terhadap berbagai masalah yang dihadapi, seperti kekurangan listrik, ketersediaan air yang tidak memadai, dan kualitas air yang tidak baik. Mereka juga menantikan perubahan dan peningkatan kondisi yang lebih baik dalam berbagai aspek kehidupan, seperti politik, ekonomi, dan sosial."
+    },
+    {
+      "cluster_id": "664",
+      "jumlah_komentar": 6,
+      "tema": "Kerusuhan Air Sememi",
+      "ringkasan": "Komentar-komentar di atas mengungkapkan kekecewaan dan kehilangan harapan masyarakat terhadap kondisi yang tidak memuaskan, seperti keterpurukan kondisi air di Indonesia, yang menyebabkan kesedihan dan kepanikan di kalangan masyarakat. Kondisi ini menunjukkan kekecewaan dan kekhawatiran masyarakat terhadap pelayanan atau kualitas suatu produk atau jasa yang tidak memenuhi harapan mereka."
+    },
+    {
+      "cluster_id": "268",
+      "jumlah_komentar": 6,
+      "tema": "Ketersediaan Air",
+      "ringkasan": "Masyarakat mengeluh tentang kekurangan air yang dialami karena tidak adanya keluarnya air dari sumber yang diharapkan, seperti PDAM Surya Sembada, yang telah menimbulkan kekecewaan dan kehilangan harapan. Kondisi ini telah berulang dan menimbulkan kesan bahwa masalah ini belum teratasi."
+    },
+    {
+      "cluster_id": "513",
+      "jumlah_komentar": 5,
+      "tema": "Selamat Hari Sumpah Pemuda",
+      "ringkasan": "Masyarakat berbahasa Indonesia mengungkapkan kegembiraan dan kebanggaan atas Hari Sumpah Pemuda, sebuah peristiwa penting dalam sejarah Indonesia yang menandai awal pergerakan kemerdekaan dan identitas bangsa. Mereka mengekspresikan rasa syukur dan kebanggaan atas perjuangan para pemuda yang telah memperjuangkan kemerdekaan Indonesia."
+    },
+    {
+      "cluster_id": "588",
+      "jumlah_komentar": 5,
+      "tema": "Gangguan yang mengganggu",
+      "ringkasan": "Komentar-komentar di atas menunjukkan kekecewaan dan frustrasi masyarakat terhadap gangguan yang terus-menerus dan tidak stabil, yang menyebabkan kebisingan dan gangguan lainnya. Mereka merasa bahwa situasi ini tidak dapat diprediksi dan tidak dapat diandalkan, sehingga memerlukan tindakan untuk mengatasi masalah tersebut."
+    },
+    {
+      "cluster_id": "635",
+      "jumlah_komentar": 5,
+      "tema": "Kondisi Lingkungan Benowo",
+      "ringkasan": "Masyarakat mengungkapkan kekecewaan dan kekhawatiran atas kondisi lingkungan di Danau Benowo yang mengalami kekeringan dan kerusakan parah, sehingga memerlukan perhatian serius dari pihak berwenang. Kondisi ini menunjukkan kekhawatiran akan dampak kekeringan pada lingkungan dan kehidupan masyarakat setempat."
+    },
+    {
+      "cluster_id": "340",
+      "jumlah_komentar": 5,
+      "tema": "Kerusakan Infrastruktur Air",
+      "ringkasan": "Masyarakat mengeluh tentang kekurangan air di daerah Karah 162 yang seringkali mengalami mati listrik, menunjukkan kekecewaan dan keheranan terhadap keadaan yang tidak memuaskan. Mereka mungkin merasa bahwa masalah ini belum teratasi dengan efektif, sehingga menyebabkan kekecewaan dan kehilangan harapan."
+    },
+    {
+      "cluster_id": "368",
+      "jumlah_komentar": 5,
+      "tema": "Kerusakan Air Bersih",
+      "ringkasan": "Masyarakat mengekspresikan kekecewaan dan kekhawatiran atas kondisi air yang semakin terbatas dan tidak memadai, terutama di daerah Mleto, Surabaya Timur, yang sering mengalami mati air pada pagi dan malam hari. Mereka menuntut penyelesaian masalah ini agar air dapat tersedia secara terus-menerus dan memadai."
+    },
+    {
+      "cluster_id": "64",
+      "jumlah_komentar": 4,
+      "tema": "Terima Kasih",
+      "ringkasan": "Komentar-komentar di atas menunjukkan rasa syukur dan terima kasih dari masyarakat terhadap informasi yang diberikan oleh @pdamsuryasembada, yang telah membantu mereka dalam mengetahui atau mempersiapkan diri terhadap sesuatu. Mereka merasa puas dan mengucapkan terima kasih atas informasi yang diberikan."
+    },
+    {
+      "cluster_id": "708",
+      "jumlah_komentar": 4,
+      "tema": "Keterlambatan",
+      "ringkasan": "Masyarakat mengalami kekecewaan dan kebosanan terhadap situasi yang tidak berubah atau tidak membaik, seperti kemacetan atau kesulitan lainnya, dan mereka merasa frustrasi karena situasi tersebut telah berlangsung terlalu lama. Mereka ingin mengetahui kapan situasi tersebut akan berakhir dan merasa tidak sabar dengan situasi yang sedang terjadi."
+    },
+    {
+      "cluster_id": "213",
+      "jumlah_komentar": 3,
+      "tema": "Kerusakan Listrik",
+      "ringkasan": "Masyarakat mengekspresikan kekecewaan dan kekhawatiran atas kejadian yang terjadi, yang kemungkinan terkait dengan keamanan atau keadaan darurat, serta kekhawatiran atas ketersediaan listrik yang sering mati. Mereka menggunakan bahasa yang ekspresif dan emosional untuk mengekspresikan perasaan mereka."
+    },
+    {
+      "cluster_id": "147",
+      "jumlah_komentar": 3,
+      "tema": "Pekerjaan Bangunan",
+      "ringkasan": "Masyarakat ingin tahu kapan pekerjaan akan selesai dan berapa lama lagi pekerjaan akan selesai, karena mereka merasa kecewa atau heran dengan kecepatan atau efektivitas pekerjaan @ericahyadi_."
+    },
+    {
+      "cluster_id": "506",
+      "jumlah_komentar": 3,
+      "tema": "Komentar Positif",
+      "ringkasan": "Komentar-komentar tersebut menunjukkan kesan positif dan kegembiraan terhadap sesuatu yang telah terjadi atau diposting, dengan penggunaan kata-kata seperti \"keren\", \"kerenn\", dan simbol-simbol emosi positif untuk mengekspresikan kebanggaan dan kegembiraan. Mereka menggunakan ekspresi seperti \"KERENNN\" dan simbol wajah senang untuk mengekspresikan kegembiraan dan kejutan mereka."
+    },
+    {
+      "cluster_id": "449",
+      "jumlah_komentar": 3,
+      "tema": "Kerusakan Listrik",
+      "ringkasan": "Masyarakat mengungkapkan kekhawatiran dan kekecewaan atas kondisi yang tidak memungkinkan untuk melakukan sesuatu, seperti tidak ada listrik di rumah. Kondisi ini membuat mereka merasa tidak yakin atau kebingungan tentang keadaan sememori atau keadaan lainnya."
+    },
+    {
+      "cluster_id": "430",
+      "jumlah_komentar": 3,
+      "tema": "Kebraon",
+      "ringkasan": "Komentar-komentar di atas menunjukkan perasaan yang beragam, mulai dari kekecewaan dan keheranan hingga kegembiraan dan kehebohan, yang tercermin dalam simbol-simbol yang digunakan seperti api 🔥. Perasaan-perasaan ini mungkin terkait dengan perilaku atau tindakan seseorang yang tidak sesuai dengan ekspektasi masyarakat."
+    },
+    {
+      "cluster_id": "675",
+      "jumlah_komentar": 3,
+      "tema": "Kerusakan Air Bersih",
+      "ringkasan": "Masyarakat di daerah Pakal mengeluhkan kesulitan dalam menggunakan air PDAM yang sering mati atau tidak keluar, menyebabkan kekecewaan dan kekhawatiran atas kemungkinan kekeringan atau kekurangan air. Kondisi ini menunjukkan kekecewaan dan kehilangan yang dirasakan masyarakat."
+    }
+  ]
+}
